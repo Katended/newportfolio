@@ -1,30 +1,37 @@
 .home-page {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    margin:0 0.5em;
+  }
+
   .text-zone {
-    position: absolute;
-    left: 10%;
-    top: 50%;
+    position: relative;
+    left: 10%; 
+    top:20%;   
     transform: translateY(-50%);
     width: 40%;
     max-height: 90%;
   }
 
   h1 {
-    color: #fff;
+    color: #444;
     font-size: 40px;
     line-height: 53px;
     margin: 0;
     font-family: 'Coolvetica';
-    font-weight: 400;
-
+    font-weight: 400; 
     
 
     span {
-      line-height: 60px;
-      letter-spacing: 5px;
+      line-height: 50px;
+      letter-spacing: 2px;
     }
-
    
-
     img {
       margin-left: 20px;
       opacity: 0;
@@ -38,32 +45,14 @@
   h2 {
     color: #8d8d8d;
     margin-top: 20px;
-    font-weight: 400;
-    font-size: 11px;
-    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: Montserrat Light;
     letter-spacing: 3px;
     animation: fadeIn 1s 1.8s backwards;
   }
 
-  .flat-button {
-    color: #ffd700;
-    font-size: 13px;
-    font-weight: 400;
-    letter-spacing: 4px;
-    font-family: sans-serif;
-    text-decoration: none;
-    padding: 10px 18px;
-    border: 1px solid #ffd700;
-    margin-top: 25px;
-    float: left;
-    animation: fadeInAnimation 1s 1.8s backwards;
-    white-space: nowrap;
-
-    &:hover {
-      background: #ffd700;
-      color: #333;
-    }
-  }
+  
 }
 
 

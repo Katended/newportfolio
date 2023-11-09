@@ -1,7 +1,24 @@
-.contact-form {
-  width: 100%;
-  margin-top: 20px;
+.contact-page {
+  display: flex;  
+  align-items: start;
+  justify-content: space-around;
+  padding-right:0px;
+  position: relative;
+  top:100px;
 
+  .item {
+      flex-basis: 40%;
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+
+     .contact-form
+     {
+      display: flex;
+      justify-content:space-between ;
+      align-items:start ;
+      font-size:10px;
+     }
   ul {
     padding: 0;
     margin: 0;
@@ -36,10 +53,11 @@
   input[type='email'] {
     width: 100%;
     border: 0;
-    background: #115173;
+    border: 1px solid #c9c9c9;;
     height: 50px;
     font-size: 16px;
-    color: #fff;
+    color: #444;
+    font-family: 'Montserrat Regular';
     padding: 0 20px;
     box-sizing: border-box;
   }
@@ -47,7 +65,8 @@
   textarea {
     width: 100%;
     border: 0;
-    background: #115173;
+    border: 1px solid #c9c9c9;    
+    font-family: 'Montserrat Regular'; ;
     height: 50px;
     font-size: 16px;
     color: #fff;
@@ -56,27 +75,12 @@
     min-height: 150px;
   }
 
-  .flat-button {
-    color: #ffd700;
-    font-size: 11px;
-    letter-spacing: 3px;
-    text-decoration: none;
-    padding: 8px 10px;
-    border: 1px solid #ffd700;
-    float: left;
-    border-radius: 4px;
-    background: 0 0;
-    text-transform: uppercase;
-    float: right;
-    text-align: center;
-    margin-right: 10px;
-  }
+  
 }
 
 .map-wrap {
-  background: rgba(8, 253, 216, 0.1);
-  float: right;
-  width: 53%;
+  background: rgba(8, 253, 216, 0.1);  
+  width: 40%;
   height: 115%;
   margin-top: -3%;
 }
@@ -88,31 +92,6 @@
   opacity: 0;
   animation: backInRight 1s 1.2s;
   animation-fill-mode: forwards;
-}
-
-.info-map {
-  position: absolute;
-  background: #000;
-  top: 50px;
-  right: 30%;
-  z-index: 999999;
-  width: 267px;
-  padding: 20px;
-  color: #fff;
-  font-family: 'Helvetica';
-  font-size: 17px;
-  font-weight: 300;
-  opacity: 0;
-  animation: fadeIn 1s 1.5s;
-  animation-fill-mode: forwards;
-
-  span {
-    font-size: 16px;
-
-    span {
-      color: #ffd700;
-    }
-  }
 }
 
 @media screen and (max-width: 1200px) {

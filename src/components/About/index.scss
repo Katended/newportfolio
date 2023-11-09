@@ -1,3 +1,46 @@
+.about-page {
+  display: flex;  
+  align-items: start;
+  justify-content:space-around;
+  padding-right:0px;
+  position: relative;
+  top:150px;
+
+
+.item {
+    flex-basis: 40%;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  h1 {
+    color: #444;
+    font-size: 30px;
+    line-height: 53px;
+    margin: 0;
+    font-family: 'Coolvetica';
+    font-weight: 300;   
+
+    span {
+      line-height: 50px;
+      letter-spacing: 2px;
+      
+    }
+
+   
+  }
+
+  h2 {
+    color: #8d8d8d;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 11px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    animation: fadeIn 1s 1.8s backwards;
+  }  
+}
+
 .stage-cube-cont {
   width: 50%;
   height: 100%;
@@ -10,72 +53,91 @@
 }
 
 .cubespinner {
-  animation-name: spincube;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 12s;
-  transform-style: preserve-3d;
-  transform-origin: 100px 100px 0;
-  margin-left: calc(50% - 100px);
+  display: flex;
+  font-size: 15px;
+  padding:0px;
+  display: flex; 
+  flex-direction: column;
+  align-items: start; 
+  border-radius: 25px;
+  height: 450px;
+  font-family: 'Space Mono', monospace;
 
-  div {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border: 1px solid #ccc;
-    background: rgba(255, 255, 255, 0.4);
+  ul {
+      width: min(60rem, 90%);
+      margin-inline: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+      justify-content: center;
+      gap: 1rem;
+      list-style: none;
+    }
+  
+    ul li {
+      max-width: 12rem;
+      justify-self: center;
+      display: grid;
+      grid-template:
+        "icon"
+        "line"
+        "dot"
+        "title"
+        "descr" 1fr;
+      justify-items: center;
+      align-items: flex-start;
+      text-align: center;
+    }
+  
+    ul li .icon {
+      grid-area: icon;
+      width: 5rem;
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
+      color: white;
+      font-size: 2.5rem;
+      border: 0.4rem solid var(--bgColor);
+      border-radius: 50%;
+      background: var(--accent-color);
+      box-shadow: -0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.45),
+        inset -0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.45);
+    }
+  
+    ul li::before {
+      content: "";
+      grid-area: line;
+      height: 2rem;
+      border-right: 2px dotted currentColor;
+    }
+  
+    ul li::after {
+      content: "";
+      grid-area: dot;
+      width: 1rem;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: var(--accent-color);
+      justify-self: center;
+      margin-bottom: 0.5rem;
+    }
+    
+  .tools {
+    grid-area: title;
+    margin-block: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
     text-align: center;
-    font-size: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 20px 0px lightyellow;
+    text-transform: uppercase;
   }
+      
 
-  .face1 {
-    transform: translateZ(100px);
-    color: #dd0031;
+  ul li .descr {
+    grid-area: descr;
+    margin-block: 0.5rem;
+    font-size: 1rem;   
+    color: #076448;
+    text-align: center;
+  
   }
-  .face2 {
-    transform: rotateY(90deg) translateZ(100px);
-    color: #f06529;
-  }
-  .face3 {
-    transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
-    color: #28a4d9;
-  }
-  .face4 {
-    transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
-    color: #5ed4f4;
-  }
-  .face5 {
-    transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
-    color: #efd81d;
-  }
-  .face6 {
-    transform: rotateX(-90deg) translateZ(100px);
-    color: #ec4d28;
-  }
-}
-
-@keyframes spincube {
-  from,
-  to {
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-  }
-  16% {
-    transform: rotateY(-90deg) rotateZ(90deg);
-  }
-  33% {
-    transform: rotateY(-90deg) rotateX(90deg);
-  }
-  50% {
-    transform: rotateY(-180deg) rotateZ(90deg);
-  }
-  66% {
-    transform: rotateY(-270deg) rotateX(90deg);
-  }
-  83% {
-    transform: rotateX(90deg);
-  }
+   
 }

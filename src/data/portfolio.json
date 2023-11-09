@@ -1,34 +1,37 @@
 {
     "portfolio": [
         {
-            "cover": "/portfolio/1/one.png",
-            "title": "GGWP",
-            "description": "React, JSX, Tailwind, Jest",
-            "url": "http://google.com"
+            "cover": "/assets/images/space.png",
+            "title": "Space Travelers' Hub",
+            "description":"In this Project, the actual live data from the SpaceX API. The task is to build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.",
+           "tech-stack": "React, JSX, Redux, Bootstrap, Redux, Jest, JavaScript",
+            "git":"https://space-travelers-groupproject.onrender.com", 
+           "url": "https://space-travelers-groupproject.onrender.com"
         },
         {
-            "cover": "/portfolio/1/one.png",
-            "title": "GGWP",
-            "description": "React, JSX, Tailwind, Jest",
-            "url": "http://google.com"
+            "cover": "/assets/images/forex.png",
+            "title": "Forex App",
+            "description":"This is a React mobile app featuring different forex rates for all major currencies. The project uses an API from VAT Comply.",
+            "tech-stack": "React, JSX, Redux, Bootstrap, Redux, Jest , JavaScript",
+            "git":"https://github.com/Katended/stock-api",
+            "url": "https://github.com/Katended/stock-api"
         },
         {
-            "cover": "/portfolio/1/one.png",
-            "title": "GGWP",
-            "description": "React, JSX, Tailwind, Jest",
-            "url": "http://google.com"
+            "cover": "/assets/images/bookstore.png",
+            "title": "Bookstore",
+            "description":"This is Bookstore App built with JavaScript (ES6) that mimics a library where a user can add/remove books using the Bookstore API. It splits the code base into modules for easy management.",
+            "tech-stack": "React, JSX, Redux, Bootstrap, Redux, Jest , JavaScript",
+            "git":"https://github.com/Katended/book-store",
+            "url": "https://bookstore-w15d.onrender.com/"
         },
         {
-            "cover": "/portfolio/1/one.png",
-            "title": "GGWP",
-            "description": "React, JSX, Tailwind, Jest",
-            "url": "http://google.com"
-        },
-        {
-            "cover": "/portfolio/1/one.png",
-            "title": "GGWP",
-            "description": "React, JSX, Tailwind, Jest",
-            "url": "http://google.com"
+            "cover": "/assets/images/todo.png",
+            "title": "To-do App",
+            "description":"This project is an app that displays a can be used to manage your to-do lists. It allows you to add and remove tasks from the list",
+            "tech-stack": "Ruby on Rails, SQL lite, Rspec, Rubocop, Bootstrap, JavaScript",
+            "git": "https://github.com/Katended/To-do-List",
+            "url": "https://katended.github.io/To-do-List/index.html"
         }
-    ]
+    ]    
+    
 }
