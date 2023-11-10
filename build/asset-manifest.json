@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ed903788.css",
+    "main.js": "/static/js/main.dd707cf6.js",
+    "static/js/787.35fe7324.chunk.js": "/static/js/787.35fe7324.chunk.js",
+    "static/media/background.jpeg": "/static/media/background.8ac2c1d4d7eac023c30d.jpeg",
+    "static/media/Resume.pdf": "/static/media/Resume.742fe5bde1d4ec847335.pdf",
+    "static/media/Montserrat-Light.ttf": "/static/media/Montserrat-Light.7179b7d2ac9b599db5f9.ttf",
+    "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.24785cc015b27a3e964b.ttf",
+    "static/media/Montserrat-Thin.ttf": "/static/media/Montserrat-Thin.9a7aece9cfe235bc0920.ttf",
+    "static/media/me.png": "/static/media/me.edbf1a2bf4782c3ff80b.png",
+    "static/media/helvetica-neu.ttf": "/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/LaBelleAurore.woff": "/static/media/LaBelleAurore.9c5433c64baa43d1d274.woff",
+    "static/media/LaBelleAurore.woff2": "/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
+    "static/media/CoolveticaRg-Regular.woff": "/static/media/CoolveticaRg-Regular.8307bfa187bccdc55f4d.woff",
+    "static/media/CoolveticaRg-Regular.woff2": "/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "index.html": "/index.html",
+    "main.ed903788.css.map": "/static/css/main.ed903788.css.map",
+    "main.dd707cf6.js.map": "/static/js/main.dd707cf6.js.map",
+    "787.35fe7324.chunk.js.map": "/static/js/787.35fe7324.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ed903788.css",
+    "static/js/main.dd707cf6.js"
+  ]
+}
