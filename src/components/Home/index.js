@@ -69,10 +69,7 @@ const Home = () => {
             React, Ruby on Rails, Laravel,Vue.js, Rails, JavaScript, Git, and MySQL
           </h2>
           <Link to="/contact" className="flat-button">
-            DOWLOAD CV
-          </Link>
-          <Link to="/contact" className="flat-button">
-            CONTACT ME
+            LET'S TALK
           </Link>
         </div>
         <div>

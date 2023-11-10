@@ -1,21 +1,19 @@
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
+import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import {
     faAngular,
     faCss3,
-    faGitAlt,
-    faHtml5,
-    faJsSquare,
     faReact,
     faJs,
     faGithub,
     faPhp,
     faVuejs,
-    faRails,
 } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Resume from '../../assets/Resume.pdf';
 
 
 
@@ -50,10 +48,13 @@ const About = () => {
                         with different developers around the world. I have also specialised in a wide array of tools and languagaes including,HTML, CSS, Bootstrap, PHP, JavaScript, React JS, Ruby on Rails, Mysql, Postgres, Redux and REST APIs. My proficiency also extends to valuable soft skills in SEO, Git, Microsoft Visual Studio and VScode.
 
                     </p>
+                    <Link path={Resume} download="Resume.pdf" className="flat-button">
+                        DOWLOAD CV
+                    </Link>
+                    <Link to="/contact" className="flat-button">
+                        LET'S TALK
+                    </Link>
 
-                    <a className="flat-button">
-                        Let's Talk
-                    </a>
                 </div>
                 <div className='cubespinner item'>
                     <div className="tools">FRONTEND TOOLBOX</div>

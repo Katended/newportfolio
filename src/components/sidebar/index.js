@@ -1,7 +1,7 @@
 import './index.scss'
 import { useState } from 'react'
-import LogoS from '../../assets/images/logo-s.png'
-import LogoSubtitle from '../../assets/images/logo_sub.png'
+// import LogoS from '../../assets/images/logo-s.png'
+//import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
     faLinkedin,
@@ -17,7 +17,7 @@ import {
     faBars,
     faClose,
 } from '@fortawesome/free-solid-svg-icons'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Sidebar = () => {
     const [showNav, setShowNav] = useState(false);
@@ -43,6 +43,7 @@ const Sidebar = () => {
                     activeclassname="active"
                     className="about-link"
                     to="/about"
+                    size="4x"
                     onClick={() => setShowNav(false)}>
                     <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
                 </NavLink>
@@ -50,6 +51,7 @@ const Sidebar = () => {
                     activeclassname="active"
                     className="portfolio-link"
                     to="/portfolio"
+                    size="4x"
                     onClick={() => setShowNav(false)}
                 >
                     <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
@@ -58,6 +60,7 @@ const Sidebar = () => {
                     activeclassname="active"
                     className="contact-link"
                     to="/contact"
+                    size="3x"
                     onClick={() => setShowNav(false)}
                 >
                     <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
@@ -68,11 +71,12 @@ const Sidebar = () => {
                     color="#ffd700"
                     size="3x"
                     className='close-icon' />
+
             </nav>
             <ul>
                 <li>
                     <a
-                        href="https://www.linkedin.com/in/slobodan-gaji%C4%87-006bb8b8/"
+                        href="https://www.linkedin.com/in/katendedavid"
                         target="_blank"
                         rel="noreferrer"
                     >
@@ -80,12 +84,13 @@ const Sidebar = () => {
                             icon={faLinkedin}
                             color="#4d4d4e"
                             className="anchor-icon"
+                            size="1x"
                         />
                     </a>
                 </li>
                 <li>
                     <a
-                        href="https://github.com/bobangajicsm"
+                        href="https://github.com/Katended"
                         target="_blank"
                         rel="noreferrer"
                     >
@@ -93,12 +98,13 @@ const Sidebar = () => {
                             icon={faGithub}
                             color="#4d4d4e"
                             className="anchor-icon"
+                            size="1x"
                         />
                     </a>
                 </li>
                 <li>
                     <a
-                        href="https://www.youtube.com/channel/UCBu5ulO4d-d47lAVybpRTkw"
+                        href="https://www.youtube.com/channel/UCa0Ct0UGdPUUDE_wVapJtyA"
                         rel="noreferrer"
                         target="_blank"
                     >
@@ -106,15 +112,17 @@ const Sidebar = () => {
                             icon={faYoutube}
                             color="#4d4d4e"
                             className="anchor-icon"
+                            size="1x"
                         />
                     </a>
                 </li>
                 <li>
-                    <a href="skype:live:bobangajicsm" rel="noreferrer" target="_blank">
+                    <a href="skype:live:katende" rel="noreferrer" target="_blank">
                         <FontAwesomeIcon
                             icon={faSkype}
                             color="#4d4d4e"
                             className="anchor-icon"
+                            size="1x"
                         />
                     </a>
                 </li>

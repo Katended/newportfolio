@@ -84,8 +84,10 @@
         "title"
         "descr" 1fr;
       justify-items: center;
-      align-items: flex-start;
+      align-items: start;
       text-align: center;
+      animation: fadeIn 1s linear;
+      animation-fill-mode: both;
     }
   
     ul li .icon {
@@ -139,5 +141,29 @@
     text-align: center;
   
   }
+
+    // Set delay per List Item
+    @for $i from 1 through 5 {
+      li:nth-child(#{$i}) {
+        animation-delay: 0.5s * $i;
+      }
+    }
+  
+    // Keyframe animation
+    @-webkit-keyframes fadeIn {
+      0% {
+        opacity: 0;
+        top: 100px;
+      }
+  
+      75% {
+        opacity: 0.5;
+        top: 0px;
+      }
+  
+      100% {
+        opacity: 1;
+      }
+    }
    
 }
