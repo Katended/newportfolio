@@ -48,9 +48,14 @@ const About = () => {
                         with different developers around the world. I have also specialised in a wide array of tools and languagaes including,HTML, CSS, Bootstrap, PHP, JavaScript, React JS, Ruby on Rails, Mysql, Postgres, Redux and REST APIs. My proficiency also extends to valuable soft skills in SEO, Git, Microsoft Visual Studio and VScode.
 
                     </p>
-                    <Link path={Resume} download="Resume.pdf" className="flat-button">
+                    <a className="flat-button"
+                        href={Resume}
+                        download="Resume.pdf"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
                         DOWLOAD CV
-                    </Link>
+                    </a>
                     <Link to="/contact" className="flat-button">
                         LET'S TALK
                     </Link>
