@@ -26,16 +26,16 @@ const About = () => {
         }, 3000)
     }, [])
 
+
     return (
         <>
-
-            <div className="container about-page ">
-                <div className='text-zone item'>
+            <div className="about-page">
+                <div>
                     <h1>
                         <AnimatedLetters
                             letterClass={letterClass}
-                            strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
-                            idx={7}
+                            strArray={"About me".split("")}
+                            idx={8}
                         />
                     </h1>
                     <p>
@@ -59,9 +59,8 @@ const About = () => {
                     <Link to="/contact" className="flat-button">
                         LET'S TALK
                     </Link>
-
                 </div>
-                <div className='cubespinner item'>
+                <div className="cubespinner">
                     <div className="tools">FRONTEND TOOLBOX</div>
                     <ul>
                         <li style={{ '--accent-color': '#60c5a6' }}>
@@ -185,14 +184,14 @@ const About = () => {
                             <div className="descr">Experienced</div>
                         </li>
                     </ul>
-
-
-
                 </div>
-            </div >
+
+            </div>
+
             <Loader type="pacman" />
         </>
     )
+
 }
 
 export default About

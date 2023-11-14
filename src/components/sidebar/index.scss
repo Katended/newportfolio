@@ -9,6 +9,8 @@
   top: calc(100%/2/2/2);
   z-index: 3;
   min-height: 500px;
+  position: -webkit-sticky;
+  position: sticky;
 
   .logo {
     display: block;
@@ -92,7 +94,11 @@
         content: 'CONTACT';
       }
     }
-
+         a.testimonies-link {
+           &:after {
+             content: 'TESTIMONIES';
+           }
+         }
     a.portfolio-link {
       &:after {
         content: 'PORTFOLIO';
@@ -132,11 +138,14 @@
       }
     }
   }
+
+    .hamburger-icon,
+    .close-icon {
+      display: none;
+    }
 }
 
-.hamburger-icon, .close-icon {
-  display: none;
-}
+
 
 
 @media screen and (max-width: 1200px) {
@@ -145,6 +154,15 @@
     position: initial;
     height: auto;
     min-height: auto;
+
+    .hamburger-icon,
+      .close-icon {
+        display: block;
+        position: absolute;
+        z-index: 3;
+        color:#5e5e5e;
+        padding:5px;    
+    }
 
      ul, nav {
       display: none;
@@ -162,6 +180,8 @@
 
       &.mobile-show {
         display: block;
+        width:20%;
+        opacity: 0.9;
       }
 
       a {
@@ -182,12 +202,6 @@
       }
      }
 
-     .hamburger-icon,
-     .close-icon {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        display: block;
-     }
+     
   }
 }

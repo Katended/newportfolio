@@ -16,6 +16,7 @@ import {
     faSuitcase,
     faBars,
     faClose,
+    faHandsClapping,
 } from '@fortawesome/free-solid-svg-icons'
 import { NavLink } from 'react-router-dom'
 
@@ -55,6 +56,15 @@ const Sidebar = () => {
                     onClick={() => setShowNav(false)}
                 >
                     <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
+                </NavLink>
+                <NavLink
+                    activeclassname="active"
+                    className="testimonies-link"
+                    to="/testimonies"
+                    size="3x"
+                    onClick={() => setShowNav(false)}
+                >
+                    <FontAwesomeIcon icon={faHandsClapping} color="#4d4d4e" />
                 </NavLink>
                 <NavLink
                     activeclassname="active"

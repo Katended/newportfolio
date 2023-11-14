@@ -44,25 +44,25 @@ const Home = () => {
 
   return (
     <>
-      <div className="container home-page">
-        <div className="text-zone">
+      <div className="home-page">
+        <div>
           <h1>
-            <span className={letterClass}>H</span>
-            <span className={`${letterClass} _12`}>i,</span>
-            <span className={`${letterClass} _14`}>&nbsp;</span>
-            <span className={`${letterClass} _13`}>I</span>
-            <span className={`${letterClass} _14`}>'m</span>
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={"Hi I am".split("")}
+              idx={5}
+            />
 
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}
-              idx={15}
+              idx={17}
             />
             <br />
             <AnimatedLetters
               letterClass={letterClass}
               strArray={jobArray}
-              idx={14}
+              idx={20}
             />
           </h1>
           <h2>
@@ -76,7 +76,7 @@ const Home = () => {
           <img src={Me} alt="my-pic" />
         </div>
 
-      </div>
+      </div >
 
       <Loader type="pacman" />
     </>

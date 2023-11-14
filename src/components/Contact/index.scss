@@ -9,19 +9,34 @@ $white: white;
 
 .contact-page {
   display: flex;  
-  align-items: start;
+  align-items: flex start;
   justify-content: space-around;
-  position: relative; 
-  top:100px;
+  align-items: start;
+  top:-400px;
+  position:relative;
+  
 
   .item {
-      flex-basis: 50%;
-      flex-grow: 0;
-      flex-shrink: 0;
-      padding: 10px;
-    }
-
+    flex-basis: 10%;
+    flex-grow: 0;
+    flex-shrink: 0;
     
+  }
+
+     h1 {
+       color: #444;
+       font-size: 40px;
+       line-height: 53px;
+       margin: 0;
+       font-family: 'Coolvetica';
+       font-weight: 400;
+  
+       span {
+         line-height: 50px;
+         letter-spacing: 2px;
+       }
+  
+     }
   ul {
     padding: 0;
     margin: 0;

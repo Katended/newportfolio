@@ -37,7 +37,7 @@ const Contact = () => {
   return (
     <>
       <div className="container contact-page">
-        <div className="text-zone item" >
+        <div >
           <h1>
             <AnimatedLetters
               letterClassName={letterClass}
